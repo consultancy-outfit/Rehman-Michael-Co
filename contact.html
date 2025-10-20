@@ -1,58 +1,19 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
-    <title>Contact Us | Syntax Consulting</title>
+    <title>Rehman Michael & Co. | Contact</title>
     <!-- /SEO Ultimate -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
     />
+    <meta
+      name="description"
+      content="Empower your business with A&C Accounts — your trusted UK accounting partner. From smart bookkeeping and payroll to expert tax planning and business advice, we help you stay compliant, save time, and grow with confidence."
+    />
+    <meta name="title" content="Rehman Michael & Co." />
     <meta charset="utf-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./assets/images/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./assets/images/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./assets/images/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/images/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./assets/images/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./assets/images/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./assets/images/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./assets/images/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/favicon/apple-icon-180x180.png"
-    />
+
     <link
       rel="icon"
       type="image/png"
@@ -99,6 +60,49 @@
       type="text/css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      /* Lightweight snackbar/toast */
+      #snackbar {
+        visibility: hidden;
+        min-width: 240px;
+        max-width: 90vw;
+        background-color: #323232;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 12px 16px;
+        position: fixed;
+        z-index: 9999;
+        left: 50%;
+        top: 24px;
+        transform: translateX(-50%);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      #snackbar.show {
+        visibility: visible;
+        opacity: 1;
+      }
+      /* Inline field errors */
+      /* Remove bottom margins from inputs/textarea; spacing will be owned by error text */
+      .get_touch_content .form-group input,
+      .get_touch_content .form-group textarea {
+        margin-bottom: 0;
+        margin-top: 30px;
+      }
+      .field-error {
+        display: none;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      .has-error .field-error {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 2px;
+      }
+    </style>
   </head>
 
   <body>
@@ -158,26 +162,29 @@
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Cases
+                      Career
                     </a>
                     <div class="dropdown-menu drop-down-content">
                       <ul class="list-unstyled drop-down-pages">
                         <li class="nav-item">
                           <a class="dropdown-item nav-link" href="./cases.html"
-                            >Cases</a
+                            >Career</a
                           >
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                           <a
                             class="dropdown-item nav-link"
                             href="./single-case.html"
                             >Single Case</a
                           >
-                        </li>
+                        </li> -->
                       </ul>
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item">
+                    <a class="nav-link"></a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
                       href="#"
@@ -187,7 +194,7 @@
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Blog
+                      
                     </a>
                     <div class="dropdown-menu drop-down-content">
                       <ul class="list-unstyled drop-down-pages">
@@ -256,7 +263,7 @@
                         </li>
                       </ul>
                     </div>
-                  </li>
+                  </li> -->
                   <li class="nav-item active">
                     <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
@@ -336,8 +343,8 @@
           <div class="col-lg-3 col-md-4 col-sm-6 col-12">
             <div class="contact_detail_box_content box">
               <h4>Phones</h4>
-              <a href="tel:+61383766284" class="text-decoration-none"
-                ><p class="text-size-16 mb-0">0113 436 0591</p></a
+              <a href="tel:+44 113 248 5664" class="text-decoration-none"
+                ><p class="text-size-16 mb-0">+44 113 248 5664</p></a
               >
               <div class="figure_wrapper">
                 <figure class="mb-0">
@@ -354,9 +361,9 @@
             <div class="contact_detail_box_content box">
               <h4>Email</h4>
               <a
-                href="mailto:info@syntaxconsulting.com"
+                href="mailto:info@rehmanmichael.com"
                 class="text-decoration-none"
-                ><p class="text-size-16 mb-0">info@syntaxconsulting.com</p></a
+                ><p class="text-size-16 mb-0">info@rehmanmichael.com</p></a
               >
               <div class="figure_wrapper">
                 <figure class="mb-0">
@@ -374,7 +381,9 @@
               <h4>Follow Us</h4>
               <ul class="mb-0">
                 <li class="list-unstyled d-inline-block">
-                  <a class="hover-effect d-inline-block" href="#"
+                  <a
+                    class="hover-effect d-inline-block"
+                    href="https://www.facebook.com/rehmanmichaelco"
                     ><i class="fa-brands fa-facebook-f"></i
                   ></a>
                 </li>
@@ -384,12 +393,16 @@
                   ></a>
                 </li>
                 <li class="list-unstyled d-inline-block">
-                  <a class="hover-effect d-inline-block" href="#"
+                  <a
+                    class="hover-effect d-inline-block"
+                    href="https://www.linkedin.com/company/rehman-michael-co"
                     ><i class="fa-brands fa-linkedin-in"></i
                   ></a>
                 </li>
                 <li class="list-unstyled d-inline-block">
-                  <a class="hover-effect d-inline-block" href="#"
+                  <a
+                    class="hover-effect d-inline-block"
+                    href="mailto:info@rehmanmichael.com"
                     ><figure class="mb-0">
                       <img
                         src="./assets/images/google_symbol.png"
@@ -441,12 +454,7 @@
             </div>
           </div>
         </div>
-        <form
-          id="contactpage"
-          method="POST"
-          action="./contact-form.php"
-          data-aos="fade-up"
-        >
+        <form id="getQuoteForm" novalidate>
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
               <div class="form-group mb-0">
@@ -458,6 +466,7 @@
                   placeholder="Your Name"
                 />
                 <i class="fa-solid fa-user"></i>
+                <small class="field-error">Name is required.</small>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -470,6 +479,7 @@
                   placeholder="Your Email"
                 />
                 <i class="fa-solid fa-envelope"></i>
+                <small class="field-error">Email is required.</small>
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -482,6 +492,7 @@
                   placeholder="Your Phone"
                 />
                 <i class="phone-rotate fa-solid fa-phone-volume"></i>
+                <small class="field-error">Phone Number is required.</small>
               </div>
             </div>
           </div>
@@ -496,6 +507,7 @@
                   id="msg"
                 ></textarea>
                 <i class="send fa-solid fa-paper-plane"></i>
+                <small class="field-error">Message is required.</small>
               </div>
             </div>
           </div>
@@ -658,5 +670,94 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="assets/js/animation.js"></script>
+    <div id="snackbar" role="status" aria-live="polite" aria-atomic="true">
+      Thank you for your enquiry! Our team will review your request and get back
+      to you shortly.
+    </div>
+    <script>
+      (function () {
+        var form = document.getElementById("getQuoteForm");
+        var snackbar = document.getElementById("snackbar");
+        if (!form || !snackbar) return;
+
+        function setError(input, message) {
+          var group = input.parentElement;
+          if (!group) return;
+          group.classList.add("has-error");
+          var small = group.querySelector(".field-error");
+          if (small) {
+            small.textContent = message;
+          }
+        }
+
+        function clearError(input) {
+          var group = input.parentElement;
+          if (!group) return;
+          group.classList.remove("has-error");
+        }
+
+        function validate() {
+          var valid = true;
+          var name = document.getElementById("name");
+          var phone = document.getElementById("phonenum");
+          var email = document.getElementById("emailid");
+          var address = document.getElementById("locate");
+
+          // Name
+          if (!name.value.trim()) {
+            setError(name, "Name is required.");
+            valid = false;
+          } else {
+            clearError(name);
+          }
+          // Phone
+          if (!phone.value.trim()) {
+            setError(phone, "Phone number is required.");
+            valid = false;
+          } else {
+            clearError(phone);
+          }
+          // Email
+          if (!email.value.trim() || !email.checkValidity()) {
+            setError(email, "Valid email is required.");
+            valid = false;
+          } else {
+            clearError(email);
+          }
+          // Address
+          if (!address.value.trim()) {
+            setError(address, "Address is required.");
+            valid = false;
+          } else {
+            clearError(address);
+          }
+
+          return valid;
+        }
+
+        ["input", "blur"].forEach(function (evt) {
+          ["name", "phonenum", "emailid", "locate"].forEach(function (id) {
+            var el = document.getElementById(id);
+            if (el) {
+              el.addEventListener(evt, function () {
+                if (this.value.trim()) clearError(this);
+              });
+            }
+          });
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var ok = validate();
+          if (!ok) return;
+          snackbar.classList.add("show");
+          clearTimeout(window.__snackTimer);
+          window.__snackTimer = setTimeout(function () {
+            snackbar.classList.remove("show");
+          }, 3000);
+          form.reset();
+        });
+      })();
+    </script>
   </body>
 </html>
