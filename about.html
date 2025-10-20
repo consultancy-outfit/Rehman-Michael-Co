@@ -34,6 +34,49 @@
     <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Lightweight snackbar/toast */
+        #snackbar {
+            visibility: hidden;
+            min-width: 240px;
+            max-width: 90vw;
+            background-color: #323232;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 12px 16px;
+            position: fixed;
+            z-index: 9999;
+            left: 50%;
+            top: 24px;
+            transform: translateX(-50%);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        #snackbar.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        /* Inline field errors */
+        /* Remove bottom margins from inputs/textarea; spacing will be owned by error text */
+        .get_touch_content .form-group input,
+        .get_touch_content .form-group textarea {
+            margin-bottom: 0;
+            margin-top: 30px;
+        }
+        .field-error {
+            display: none;
+            color: #ffffff;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        .has-error .field-error {
+            display: block;
+            margin-top: 0px;
+            margin-bottom: 2px;
+        }
+    </style>
 </head>
 
 <body>
@@ -167,7 +210,7 @@
                     </figure>
                     <div class="box position-absolute">
                         <span class="years">+</span>
-                        <span class="counter years number">25</span>
+                        <span class="counter years number">20</span>
                         <span class="years">Years</span>
                         <span class="experience d-block">Of Experience</span>
                     </div>
@@ -179,10 +222,10 @@
                         <img src="./assets/images/01.png" alt="" class="img-fluid">
                     </figure>
                     <h5>About Our Company</h5>
-                    <h2>Professional And Dedicated Consulting Services</h2>
-                    <p class="text-size-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
-                    <h6>“Above all, we believe that real change is possible and that tomorrow doesn’t have to be like today”</h6>
-                    <p class="text-size-16 margin_bottom">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h2>Committed to Your Business Success</h2>
+                    <p class="text-size-16">We are a UK-based firm providing reliable, professional, and affordable accounting and business advisory services. Our aim is to simplify financial management for individuals, sole traders, and companies of all sizes, ensuring accuracy, compliance, and peace of mind.</p>
+                    <h6>“Change doesn’t happen by chance — it happens through vision, trust, and consistent effort”</h6>
+                    <p class="text-size-16 margin_bottom">With a strong focus on client care and transparent communication, we believe in building long-term relationships founded on trust and integrity. Every client receives personal attention, clear guidance, and practical solutions designed to support their financial goals.</p>
                     <div class="content_black_box">
                         <div class="images_wrapper position-relative">
                             <figure class="mb-0 blackbox_image_one">
@@ -227,15 +270,15 @@
                         <img src="./assets/images/aboutus_02.png" alt="" class="img-fluid">
                     </figure>
                     <h5>Why Choose Us</h5>
-                    <h2>More than 25 Years of Experience</h2>
+                    <h2>More than 20 Years of Experience</h2>
                     <div class="box_wrapper box_wrapper1">
                         <div class="box mb-0">
                             <figure>
                                 <img src="./assets/images/choose_left_box_shape.png" alt="" class="img-fluid">
                             </figure>
                             <div class="box_content">
-                                <h2 class="counter">253</h2>
-                                <p class="mb-0">Projects Completed</p>
+                                <h2 class="counter">500</h2>
+                                <p class="mb-0">Businesses Supported</p>
                             </div>
                             
                         </div>
@@ -244,8 +287,8 @@
                                 <img src="./assets/images/choose_left_box_shape.png" alt="" class="img-fluid">
                             </figure>
                             <div class="box_content">
-                                <h2 class="counter">16</h2>
-                                <p class="mb-0">Consultants</p>
+                                <h2 class="counter">30</h2>
+                                <p class="mb-0">Qualified Accountants</p>
                             </div>
                         </div>
                     </div>
@@ -255,8 +298,8 @@
                                 <img src="./assets/images/choose_left_box_shape.png" alt="" class="img-fluid">
                             </figure>
                             <div class="box_content">
-                                <h2 class="counter">11</h2>
-                                <p class="mb-0">Awards winning</p>
+                                <h2 class="counter">15</h2>
+                                <p class="mb-0">Industry Awards</p>
                             </div>
                         </div>
                         <div class="box box_2 mb-0 mr-0">
@@ -264,8 +307,8 @@
                                 <img src="./assets/images/choose_left_box_shape.png" alt="" class="img-fluid">
                             </figure>
                             <div class="box_content">
-                                <h2 class="counter">372</h2>
-                                <p class="mb-0">Satisfied Customers</p>
+                                <h2 class="counter">1000</h2>
+                                <p class="mb-0">Satisfied Clients</p>
                             </div>
                         </div>
                     </div>
@@ -282,8 +325,8 @@
                                     </figure>
                                 </div>
                                 <div class="text_wrapper">
-                                    <h4>Strategic Vision Work</h4>
-                                    <p class="text-size-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                    <h4> Trusted Expertise</h4>
+                                    <p class="text-size-14 mb-0">Our team of chartered accountants brings decades of UK industry experience, ensuring your business remains compliant and financially efficient.</p>
                                 </div>
                             </div>
                         </div>
@@ -295,8 +338,8 @@
                                     </figure>
                                 </div>
                                 <div class="text_wrapper">
-                                    <h4>trusted & professional</h4>
-                                    <p class="text-size-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                    <h4>Proactive & Reliable</h4>
+                                    <p class="text-size-14 mb-0">We don’t just handle numbers — we help you plan ahead. From tax strategy to payroll, we deliver proactive solutions that save you time and money.</p>
                                 </div>
                             </div>
                         </div>
@@ -308,8 +351,8 @@
                                     </figure>
                                 </div>
                                 <div class="text_wrapper">
-                                    <h4>Best SOLUTION EXPERTS</h4>
-                                    <p class="text-size-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                    <h4>Tailored Accounting Services</h4>
+                                    <p class="text-size-14 mb-0">Every business is unique. That’s why we offer flexible, personalised accounting and advisory services to fit your goals and compliance needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -349,9 +392,9 @@
                         <img src="./assets/images/professional_team_image_ring.png" alt="" class="img-fluid">
                     </figure>
                     <div class="professional_team_box_content_wrapper">
-                        <h4>Steve Smith</h4>
-                        <p>Chief Consultant</p>
-                        <ul class="list-unstyled p-0 m-0">
+                        <h4>Sarah Thompson</h4>
+                        <p>Senior Accountant</p>
+                        <!-- <ul class="list-unstyled p-0 m-0">
                             <li class="hover-effect">
                                 <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                             </li>
@@ -364,7 +407,7 @@
                             <li class="hover-effect">
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -375,9 +418,9 @@
                         <img src="./assets/images/professional_team_image_ring.png" alt="" class="img-fluid">
                     </figure>
                     <div class="professional_team_box_content_wrapper">
-                        <h4>Abelina Smith</h4>
-                        <p>Chief Consultant</p>
-                        <ul class="list-unstyled p-0 m-0">
+                        <h4>Daniel Reed</h4>
+                        <p>Client Relationship Manager</p>
+                        <!-- <ul class="list-unstyled p-0 m-0">
                             <li class="hover-effect">
                                 <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                             </li>
@@ -390,7 +433,7 @@
                             <li class="hover-effect">
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -401,9 +444,9 @@
                         <img src="./assets/images/professional_team_image_ring.png" alt="" class="img-fluid">
                     </figure>
                     <div class="professional_team_box_content_wrapper">
-                        <h4>Adam Smith</h4>
+                        <h4>James Parker</h4>
                         <p>Chief Consultant</p>
-                        <ul class="list-unstyled p-0 m-0">
+                        <!-- <ul class="list-unstyled p-0 m-0">
                             <li class="hover-effect">
                                 <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                             </li>
@@ -416,7 +459,7 @@
                             <li class="hover-effect">
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <figure class="mb-0 position-absolute circle_shape left_right_shape">
                         <img src="./assets/images/professional_team_circle_shape.png" alt="" class="img-fluid">
@@ -444,26 +487,30 @@
                     </figure>
                     <h5>Get In Touch</h5>
                     <h2>Get A Free Quote</h2>
-                    <form>
+                    <form id="getQuoteForm" novalidate>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div class="form-group mb-0">    
-                                <input type="text" placeholder="Your Name" name="name" id="name"> 
+                                <div class="form-group mb-0" >    
+                                <input type="text" placeholder="Your Name" name="name" id="name" required> 
+                                <small class="field-error">Name is required.</small>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group mb-0 form_margin">    
-                                <input type="tel" placeholder="Phone Number" name="phone" id="phonenum"> 
+                                <input type="tel" placeholder="Phone Number" name="phone" id="phonenum" required> 
+                                <small class="field-error">Phone number is required.</small>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group mb-0">
-                                <input type="email" placeholder="Email Address" name="email" id="emailid">
+                                <input type="email" placeholder="Email" name="email" id="emailid" required>
+                                <small class="field-error">Valid email is required.</small>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group mb-0 form_margin">    
-                                <input type="text" placeholder="Location" name="location" id="locate"> 
+                                <input type="text" placeholder="Address" name="address" id="locate" required> 
+                                <small class="field-error">Address is required.</small>
                                 </div>
                             </div>
                         </div>
@@ -475,7 +522,7 @@
                             </div>
                         </div>
                         <div class="form_button_wrapper position-relative">
-                            <button type="submit">SUBMIT</button>
+                            <button type="submit" >SUBMIT</button>
                             <figure class="mb-0 white_arrow"><img src="./assets/images/arrow_right.png" alt="" class="img-fluid"></figure>
                         </div>
                     </form>
@@ -528,12 +575,12 @@
                                             <figure class="apostrophy">
                                                 <img src="./assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
                                             </figure>
-                                            <p class="text-size-14 text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="text-size-14 text">Working with this team has been a game-changer for our business. They took the time to understand our goals and provided solutions that made a real difference. Their professionalism and responsiveness are truly impressive.</p>
                                             <figure class="mb-0 content_shape">
                                                 <img src="./assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
                                             </figure>
-                                            <h4>Ann Peterson</h4>
-                                            <p class="text-size-14 mb-0">Lorum Ipsum Dolar</p>
+                                            <h4>Emily Watson</h4>
+                                            <p class="text-size-14 mb-0">Business Owner</p>
                                             <ul class="list-unstyled mb-0">
                                                 <li><i class="fa-solid fa-star"></i></li>
                                                 <li><i class="fa-solid fa-star"></i></li>
@@ -557,12 +604,12 @@
                                             <figure class="apostrophy">
                                                 <img src="./assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
                                             </figure>
-                                            <p class="text-size-14 text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="text-size-14 text"> From day one, their experts have guided us through complex financial matters with complete transparency. Their advice has helped us streamline our processes and make smarter decisions. Highly recommended.</p>
                                             <figure class="mb-0 content_shape">
                                                 <img src="./assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
                                             </figure>
-                                            <h4>Ann Peterson</h4>
-                                            <p class="text-size-14 mb-0">Lorum Ipsum Dolar</p>
+                                            <h4>Daniel Reed</h4>
+                                            <p class="text-size-14 mb-0">Finance Director</p>
                                             <ul class="list-unstyled mb-0">
                                                 <li><i class="fa-solid fa-star"></i></li>
                                                 <li><i class="fa-solid fa-star"></i></li>
@@ -586,12 +633,12 @@
                                             <figure class="apostrophy">
                                                 <img src="./assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
                                             </figure>
-                                            <p class="text-size-14 text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="text-size-14 text">We’ve been clients for over two years, and the consistency in service is remarkable. They go beyond numbers — offering insights that help our company grow with confidence.</p>
                                             <figure class="mb-0 content_shape">
                                                 <img src="./assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
                                             </figure>
-                                            <h4>Ann Peterson</h4>
-                                            <p class="text-size-14 mb-0">Lorum Ipsum Dolar</p>
+                                            <h4>Sarah Mitchell</h4>
+                                            <p class="text-size-14 mb-0">Operations Manager</p>
                                             <ul class="list-unstyled mb-0">
                                                 <li><i class="fa-solid fa-star"></i></li>
                                                 <li><i class="fa-solid fa-star"></i></li>
@@ -634,9 +681,9 @@
                 <div class="footer-links-content">
                     <h3 class="text-white">Contact</h3>
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fa-solid fa-location-dot location"></i><a class="text-decoration-none">21 King Street Melbourne, 3000, Australia</a></li>
+                        <li><i class="fa-solid fa-location-dot location"></i><a class="text-decoration-none">277 Roundhay Road, Leeds, West Yorkshire, LS8 4HS</a></li>
                         <li class="mail"><i class="fa-sharp fa-solid fa-envelope"></i><a class="text-decoration-none" href="mailto:info@syntaxconsulting.com">info@syntaxconsulting.com</a></li>
-                        <li><i class="fa-solid fa-phone"></i><a class="text-decoration-none" href="tel:+61383766284">+61 3 8376 6284</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a class="text-decoration-none" href="tel:+61383766284">0113 436 0591</a></li>
                     </ul>
                 </div>
             </div>
@@ -694,5 +741,69 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/counter.js"></script>
 <script src="assets/js/animation.js"></script>
+    <div id="snackbar" role="status" aria-live="polite" aria-atomic="true">Thank you for your enquiry! Our team will review your request and get back to you shortly.</div>
+    <script>
+    (function() {
+        var form = document.getElementById('getQuoteForm');
+        var snackbar = document.getElementById('snackbar');
+        if (!form || !snackbar) return;
+
+        function setError(input, message) {
+            var group = input.parentElement;
+            if (!group) return;
+            group.classList.add('has-error');
+            var small = group.querySelector('.field-error');
+            if (small) { small.textContent = message; }
+        }
+
+        function clearError(input) {
+            var group = input.parentElement;
+            if (!group) return;
+            group.classList.remove('has-error');
+        }
+
+        function validate() {
+            var valid = true;
+            var name = document.getElementById('name');
+            var phone = document.getElementById('phonenum');
+            var email = document.getElementById('emailid');
+            var address = document.getElementById('locate');
+
+            // Name
+            if (!name.value.trim()) { setError(name, 'Name is required.'); valid = false; } else { clearError(name); }
+            // Phone
+            if (!phone.value.trim()) { setError(phone, 'Phone number is required.'); valid = false; } else { clearError(phone); }
+            // Email
+            if (!email.value.trim() || !email.checkValidity()) { setError(email, 'Valid email is required.'); valid = false; } else { clearError(email); }
+            // Address
+            if (!address.value.trim()) { setError(address, 'Address is required.'); valid = false; } else { clearError(address); }
+
+            return valid;
+        }
+
+        ['input', 'blur'].forEach(function(evt){
+            ['name','phonenum','emailid','locate'].forEach(function(id){
+                var el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener(evt, function(){
+                        if (this.value.trim()) clearError(this);
+                    });
+                }
+            });
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var ok = validate();
+            if (!ok) return;
+            snackbar.classList.add('show');
+            clearTimeout(window.__snackTimer);
+            window.__snackTimer = setTimeout(function(){
+                snackbar.classList.remove('show');
+            }, 3000);
+            form.reset();
+        });
+    })();
+    </script>
 </body>
 </html>
