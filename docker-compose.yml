@@ -1,0 +1,17 @@
+
+version: '3.8'
+services:
+  rehman-michael:
+    container_name: rehman-michael-salesite
+    restart: unless-stopped
+    ports:
+      - '9083:80'
+    networks:
+      - salesite
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+networks:
+  salesite:
+    external: true
